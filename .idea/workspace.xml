@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="安装webpack">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="更改webpack的版本">
+      <change afterPath="$PROJECT_DIR$/lib/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +35,7 @@
   <component name="ProjectId" id="1pC0cJVJR1r1RohdQ3FRHnLb7jr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -43,6 +45,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\program\WebStorm 2020.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -55,7 +58,10 @@
       <option name="presentableId" value="Default" />
       <updated>1614671842401</updated>
       <workItem from="1614671846813" duration="13000" />
-      <workItem from="1614671861883" duration="773000" />
+      <workItem from="1614671861883" duration="903000" />
+      <workItem from="1614672767095" duration="5000" />
+      <workItem from="1614672784186" duration="162000" />
+      <workItem from="1614672958345" duration="435000" />
     </task>
     <task id="LOCAL-00001" summary="yarn初始化项目">
       <created>1614672046382</created>
@@ -71,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614672359019</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="更改webpack的版本">
+      <created>1614672682228</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614672682228</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,20 +100,22 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="yarn初始化项目" />
     <MESSAGE value="安装webpack" />
-    <option name="LAST_COMMIT_MESSAGE" value="安装webpack" />
+    <MESSAGE value="更改webpack的版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改webpack的版本" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1614671858444">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1614672944898">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1614671858444" />
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1614672360774">
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1614672944898" />
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1614672694047">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1614672360774" />
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1614672694047" />
   </component>
 </project>
