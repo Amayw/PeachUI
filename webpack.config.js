@@ -1,6 +1,13 @@
+const path=require('path');
+
 module.exports={
     entry:{
-        index:'./lib/index.tsx'
+        peachui:'./lib/index.tsx'
+    },
+    output:{
+        path:path.resolve(__dirname,'dist/lib'),
+        library: 'PeachUI',
+        libraryTarget: 'umd'
     },
     module:{
         rules:[
