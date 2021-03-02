@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="创建webpack.config.js，并配置entry">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="安装react和react-dom，以及类型">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +62,7 @@
       <workItem from="1614671861883" duration="903000" />
       <workItem from="1614672767095" duration="5000" />
       <workItem from="1614672784186" duration="162000" />
-      <workItem from="1614672958345" duration="760000" />
+      <workItem from="1614672958345" duration="10006000" />
     </task>
     <task id="LOCAL-00001" summary="yarn初始化项目">
       <created>1614672046382</created>
@@ -90,7 +92,63 @@
       <option name="project" value="LOCAL" />
       <updated>1614673422409</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="安装awesome-typescript-loader以解释tsx或ts，并配置">
+      <created>1614673775373</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614673775373</updated>
+    </task>
+    <task id="LOCAL-00006" summary="完成output的配置">
+      <created>1614674806830</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614674806830</updated>
+    </task>
+    <task id="LOCAL-00007" summary="创建tsconfig.json和tslint.json">
+      <created>1614675562167</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614675562167</updated>
+    </task>
+    <task id="LOCAL-00008" summary="成功使用npx webpack将lib/index.tsx编译到dist/lib/peachui.js">
+      <created>1614675966355</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614675966355</updated>
+    </task>
+    <task id="LOCAL-00009" summary="安装webpack-dev-server">
+      <created>1614677679231</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1614677679231</updated>
+    </task>
+    <task id="LOCAL-00010" summary="创建index.html">
+      <created>1614685419909</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1614685419909</updated>
+    </task>
+    <task id="LOCAL-00011" summary="安装配置html-webpack-plugin插件，让index.html可以自动引用编译好的dist/lib中的js文件">
+      <created>1614686574326</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1614686574326</updated>
+    </task>
+    <task id="LOCAL-00012" summary="安装react和react-dom，以及类型">
+      <created>1614688857187</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1614688857187</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,16 +171,24 @@
     <MESSAGE value="安装webpack" />
     <MESSAGE value="更改webpack的版本" />
     <MESSAGE value="创建webpack.config.js，并配置entry" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建webpack.config.js，并配置entry" />
+    <MESSAGE value="安装awesome-typescript-loader以解释tsx或ts，并配置" />
+    <MESSAGE value="完成output的配置" />
+    <MESSAGE value="创建tsconfig.json和tslint.json" />
+    <MESSAGE value="成功使用npx webpack将lib/index.tsx编译到dist/lib/peachui.js" />
+    <MESSAGE value="安装webpack-dev-server" />
+    <MESSAGE value="创建index.html" />
+    <MESSAGE value="安装配置html-webpack-plugin插件，让index.html可以自动引用编译好的dist/lib中的js文件" />
+    <MESSAGE value="安装react和react-dom，以及类型" />
+    <option name="LAST_COMMIT_MESSAGE" value="安装react和react-dom，以及类型" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1614672944898">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1614672944898" />
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1614673423991">
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1614688858932">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1614673423991" />
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1614688858932" />
   </component>
 </project>
