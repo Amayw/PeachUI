@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="更改webpack的版本">
-      <change afterPath="$PROJECT_DIR$/lib/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="创建webpack.config.js，并配置entry">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,7 @@
       <workItem from="1614671861883" duration="903000" />
       <workItem from="1614672767095" duration="5000" />
       <workItem from="1614672784186" duration="162000" />
-      <workItem from="1614672958345" duration="435000" />
+      <workItem from="1614672958345" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="yarn初始化项目">
       <created>1614672046382</created>
@@ -84,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614672682228</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="创建webpack.config.js，并配置entry">
+      <created>1614673422409</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614673422409</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,16 +112,17 @@
     <MESSAGE value="yarn初始化项目" />
     <MESSAGE value="安装webpack" />
     <MESSAGE value="更改webpack的版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改webpack的版本" />
+    <MESSAGE value="创建webpack.config.js，并配置entry" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建webpack.config.js，并配置entry" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1614672944898">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1614672944898" />
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1614672694047">
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1614673423991">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1614672694047" />
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1614673423991" />
   </component>
 </project>
