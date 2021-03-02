@@ -1,7 +1,6 @@
 const path=require('path');
 const HtmlWebpackPlugin=require('html-webpack-plugin');
 module.exports={
-    mode:'production',
     entry:{
         peachui:'./lib/index.tsx'
     },
@@ -20,11 +19,5 @@ module.exports={
                 loader:'awesome-typescript-loader'
             }
         ]
-    },
-    plugins:[
-        new HtmlWebpackPlugin({
-            title:'PeachUI - React',
-            template:'index.html'
-        })
-    ]
+    }
 }
