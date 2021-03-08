@@ -3,7 +3,7 @@
     "declaration": true,
     "baseUrl": ".",
     "outDir": "dist",
-    "module": "esnext",
+    "module": "commonjs",
     "target": "es5",
     "lib": ["es6", "dom"],
     "sourceMap": true,
@@ -17,6 +17,7 @@
     "importHelpers": true,
     "strictNullChecks": true,
 //    "esModuleInterop": true,
+//    "allowSyntheticDefaultImports": true,
     // "suppressImplicitAnyIndexErrors": true,
     // https://github.com/Microsoft/TypeScript/issues/28762#issuecomment-443406607
     "noUnusedLocals": true
