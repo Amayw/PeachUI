@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="安装cross-env">
+    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="配置tsconfig.json的outDir，使得build后d.ts文件输出到dist/lib目录下">
+      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,7 @@
       <workItem from="1614672784186" duration="162000" />
       <workItem from="1614672958345" duration="12188000" />
       <workItem from="1614757549897" duration="115000" />
-      <workItem from="1615198032673" duration="2890000" />
+      <workItem from="1615198032673" duration="4005000" />
     </task>
     <task id="LOCAL-00001" summary="yarn初始化项目">
       <created>1614672046382</created>
@@ -177,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615199833797</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="配置tsconfig.json的outDir，使得build后d.ts文件输出到dist/lib目录下">
+      <created>1615201666398</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1615201666398</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,16 +219,17 @@
     <MESSAGE value="index.tsx中使用button.tsx，且成功运行" />
     <MESSAGE value="分别创建开发和生产两种模式的webpack配置，并且修改package.json" />
     <MESSAGE value="安装cross-env" />
-    <option name="LAST_COMMIT_MESSAGE" value="安装cross-env" />
+    <MESSAGE value="配置tsconfig.json的outDir，使得build后d.ts文件输出到dist/lib目录下" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置tsconfig.json的outDir，使得build后d.ts文件输出到dist/lib目录下" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1614757662791">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1614757662791" />
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1615199835655">
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1615201667942">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1615199835655" />
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1615201667942" />
   </component>
 </project>
