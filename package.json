@@ -1,7 +1,8 @@
 {
   "name": "PeachUI",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "dist/lib/index",
+  "types": "dist/lib/index",
   "repository": "git@github.com:Amayw/PeachUI.git",
   "author": "wywang <727936199@qq.com>",
   "license": "MIT",
