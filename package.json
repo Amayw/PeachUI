@@ -1,5 +1,5 @@
 {
-  "name": "PeachUI",
+  "name": "peachui",
   "version": "0.0.1",
   "main": "dist/lib/index",
   "types": "dist/lib/index",
@@ -21,9 +21,12 @@
     "awesome-typescript-loader": "^5.2.1",
     "babel-jest": "^24.3.1",
     "cross-env": "^5.2.0",
+    "css-loader": "^5.1.3",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.3.1",
     "react-test-renderer": "^16.8.4",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
     "svg-sprite-loader": "^4.1.3",
     "ts-jest": "^24.0.0",
     "typescript": "^3.3.3333",
@@ -32,6 +35,7 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
+    "node-sass": "npm:dart-sass",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   }
