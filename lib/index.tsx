@@ -5,4 +5,11 @@ import Icon from './Icon'
 const fn:React.MouseEventHandler=(e)=>{
     console.log(e.target)
 }
-ReactDOM.render(<Icon name='i-tip' onClick={fn}/>,document.querySelector('#root'));
+
+// const fn2:React.MouseEventHandler=(e)=>{
+//     console.log('enter')
+// }
+ReactDOM.render(<Icon className='test' name='i-tip' onClick={fn}
+                      onMouseLeave={()=>{console.log('leave')}}
+                      onMouseEnter={()=>{console.log('enter')}}/>,
+    document.querySelector('#root'));
