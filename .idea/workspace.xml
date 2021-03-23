@@ -19,12 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="测试配置完成">
-      <change afterPath="$PROJECT_DIR$/lib/icon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.test.json" afterDir="false" />
+    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="创建icon组件">
+      <change afterPath="$PROJECT_DIR$/lib/svg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/types/custom.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/wechat.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Icon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +45,24 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../matrixmul-master/matrixmul-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/types" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="D:\program\WebStorm 2020.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\PeachUI\lib\types" />
+      <recent name="D:\code\PeachUI\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\PeachUI\lib" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -68,7 +83,8 @@
       <workItem from="1615198032673" duration="10254000" />
       <workItem from="1615293078011" duration="601000" />
       <workItem from="1615375043056" duration="65000" />
-      <workItem from="1616389724116" duration="631000" />
+      <workItem from="1616389724116" duration="3408000" />
+      <workItem from="1616479645574" duration="5518000" />
     </task>
     <task id="LOCAL-00001" summary="yarn初始化项目">
       <created>1614672046382</created>
@@ -210,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615208208994</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="创建icon组件">
+      <created>1616390964420</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1616390964420</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,16 +272,17 @@
     <MESSAGE value="安装jest及相关包，创建jest.config.js" />
     <MESSAGE value="安装ts-jest" />
     <MESSAGE value="测试配置完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试配置完成" />
+    <MESSAGE value="创建icon组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建icon组件" />
   </component>
   <component name="WindowStateProjectService">
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1615375106624">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1615375106624" />
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1615208211641">
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1616390966058">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1615208211641" />
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1616390966058" />
   </component>
 </project>
