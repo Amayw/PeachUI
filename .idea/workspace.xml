@@ -19,10 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="完善Icon组件，安装classnames，解决合并className的问题">
-      <change afterPath="$PROJECT_DIR$/lib/helpers/classes.tsx" afterDir="false" />
+    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="自己创建helpers/classes.tsx，从而合并classNames">
+      <change afterPath="$PROJECT_DIR$/lib/helpers/__tests__/classes.unit.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Icon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/__tests__/button.unit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/__tests__/button.unit.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/helpers/__test__/classes.unit.jsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +79,7 @@
       <workItem from="1615293078011" duration="601000" />
       <workItem from="1615375043056" duration="65000" />
       <workItem from="1616389724116" duration="3408000" />
-      <workItem from="1616479645574" duration="15347000" />
+      <workItem from="1616479645574" duration="17371000" />
     </task>
     <task id="LOCAL-00001" summary="yarn初始化项目">
       <created>1614672046382</created>
@@ -261,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616503663182</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="自己创建helpers/classes.tsx，从而合并classNames">
+      <created>1616505239844</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1616505239844</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +289,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="安装webpack" />
     <MESSAGE value="更改webpack的版本" />
     <MESSAGE value="创建webpack.config.js，并配置entry" />
     <MESSAGE value="安装awesome-typescript-loader以解释tsx或ts，并配置" />
@@ -305,7 +313,8 @@
     <MESSAGE value="创建icon.scss，Icon组件中成功使用scss" />
     <MESSAGE value="给Icon添加点击事件" />
     <MESSAGE value="完善Icon组件，安装classnames，解决合并className的问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善Icon组件，安装classnames，解决合并className的问题" />
+    <MESSAGE value="自己创建helpers/classes.tsx，从而合并classNames" />
+    <option name="LAST_COMMIT_MESSAGE" value="自己创建helpers/classes.tsx，从而合并classNames" />
   </component>
   <component name="WindowStateProjectService">
     <state x="388" y="135" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616504647571">
@@ -316,9 +325,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1615375106624" />
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1616503665729">
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1616505241440">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1616503665729" />
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1616505241440" />
   </component>
 </project>
