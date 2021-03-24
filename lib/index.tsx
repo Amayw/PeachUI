@@ -9,7 +9,7 @@ const fn:React.MouseEventHandler=(e)=>{
 // const fn2:React.MouseEventHandler=(e)=>{
 //     console.log('enter')
 // }
-ReactDOM.render(<Icon className='test' name='i-tip' onClick={fn}
+ReactDOM.render(<Icon className='test' name='left' onClick={fn}
                       onMouseLeave={()=>{console.log('leave')}}
                       onMouseEnter={()=>{console.log('enter')}}/>,
     document.querySelector('#root'));
