@@ -7,4 +7,8 @@ describe("icon",()=>{
         const json=renderer.create(<Icon name='left'/>).toJSON();
         expect(json).toMatchSnapshot();
     })
+
+    it('可以被点击',()=>{
+
+    })
 })
