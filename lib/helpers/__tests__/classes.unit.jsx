@@ -1,5 +1,3 @@
-import renderer from 'react-test-renderer'
-import React from 'react'
 import classes from '../classes'
 describe('classes',()=>{
     it('可以接收0个className',()=>{

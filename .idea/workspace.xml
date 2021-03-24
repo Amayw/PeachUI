@@ -19,12 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="自己创建helpers/classes.tsx，从而合并classNames">
-      <change afterPath="$PROJECT_DIR$/lib/helpers/__tests__/classes.unit.jsx" afterDir="false" />
+    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="创建icon目录，将icon组件和icon.scss放到这个目录中，之后关于icon的测试也都写到这个目录里面">
+      <change afterPath="$PROJECT_DIR$/lib/icon/__tests__/icon.unit.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Icon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/__tests__/button.unit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/__tests__/button.unit.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/helpers/__test__/classes.unit.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/helpers/__tests__/classes.unit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/helpers/__tests__/classes.unit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +55,8 @@
       <recent name="D:\code\PeachUI\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\PeachUI\lib\button" />
+      <recent name="D:\code\PeachUI\lib\icon" />
       <recent name="D:\code\PeachUI\lib" />
     </key>
   </component>
@@ -79,7 +80,8 @@
       <workItem from="1615293078011" duration="601000" />
       <workItem from="1615375043056" duration="65000" />
       <workItem from="1616389724116" duration="3408000" />
-      <workItem from="1616479645574" duration="17371000" />
+      <workItem from="1616479645574" duration="18227000" />
+      <workItem from="1616562576517" duration="1436000" />
     </task>
     <task id="LOCAL-00001" summary="yarn初始化项目">
       <created>1614672046382</created>
@@ -270,7 +272,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616505239844</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="完成helpers/classes.tsx的单元测试">
+      <created>1616507099111</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1616507099112</updated>
+    </task>
+    <task id="LOCAL-00029" summary="创建icon目录，将icon组件和icon.scss放到这个目录中，之后关于icon的测试也都写到这个目录里面">
+      <created>1616507363997</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1616507363997</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,8 +305,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="更改webpack的版本" />
-    <MESSAGE value="创建webpack.config.js，并配置entry" />
     <MESSAGE value="安装awesome-typescript-loader以解释tsx或ts，并配置" />
     <MESSAGE value="完成output的配置" />
     <MESSAGE value="创建tsconfig.json和tslint.json" />
@@ -314,7 +328,9 @@
     <MESSAGE value="给Icon添加点击事件" />
     <MESSAGE value="完善Icon组件，安装classnames，解决合并className的问题" />
     <MESSAGE value="自己创建helpers/classes.tsx，从而合并classNames" />
-    <option name="LAST_COMMIT_MESSAGE" value="自己创建helpers/classes.tsx，从而合并classNames" />
+    <MESSAGE value="完成helpers/classes.tsx的单元测试" />
+    <MESSAGE value="创建icon目录，将icon组件和icon.scss放到这个目录中，之后关于icon的测试也都写到这个目录里面" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建icon目录，将icon组件和icon.scss放到这个目录中，之后关于icon的测试也都写到这个目录里面" />
   </component>
   <component name="WindowStateProjectService">
     <state x="388" y="135" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616504647571">
@@ -325,9 +341,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1615375106624" />
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1616505241440">
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1616507365186">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1616505241440" />
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1616507365186" />
   </component>
 </project>
