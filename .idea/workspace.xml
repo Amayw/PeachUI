@@ -19,9 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="修改config.yml文件内容">
+    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="package.json中配置ci命令">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +84,7 @@
       <workItem from="1616479645574" duration="18227000" />
       <workItem from="1616562576517" duration="7683000" />
       <workItem from="1616573559316" duration="538000" />
-      <workItem from="1616574110144" duration="1522000" />
+      <workItem from="1616574110144" duration="1872000" />
     </task>
     <task id="LOCAL-00001" summary="yarn初始化项目">
       <created>1614672046382</created>
@@ -343,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616575494166</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="package.json中配置ci命令">
+      <created>1616575650213</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1616575650213</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +371,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="webpack配置resolve" />
     <MESSAGE value="index.tsx中使用button.tsx，且成功运行" />
     <MESSAGE value="分别创建开发和生产两种模式的webpack配置，并且修改package.json" />
     <MESSAGE value="安装cross-env" />
@@ -387,7 +395,8 @@
     <MESSAGE value="应该叫.circleci" />
     <MESSAGE value="刚才上传失败" />
     <MESSAGE value="修改config.yml文件内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改config.yml文件内容" />
+    <MESSAGE value="package.json中配置ci命令" />
+    <option name="LAST_COMMIT_MESSAGE" value="package.json中配置ci命令" />
   </component>
   <component name="WindowStateProjectService">
     <state x="388" y="135" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616504647571">
@@ -402,10 +411,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1616569963783" />
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1616575495679">
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1616575651879">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1616575495679" />
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1616575651879" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1616569932557">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
