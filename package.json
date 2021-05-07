@@ -1,6 +1,6 @@
 {
   "name": "peachui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/lib/index",
   "types": "dist/lib/index",
   "repository": "git@github.com:Amayw/PeachUI.git",
