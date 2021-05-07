@@ -19,8 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="修改config.yml">
-      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+    <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="终于circle ci全绿了，yarn ci也能成功执行了">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/button/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/button/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/icon/Icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/icon/Icon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/types/custom.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/types/custom.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/types" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../part2/section3nodejsweb/express-demo-1" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="ts.external.directory.path" value="D:\program\WebStorm 2020.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -81,7 +85,8 @@
       <workItem from="1616479645574" duration="18227000" />
       <workItem from="1616562576517" duration="7683000" />
       <workItem from="1616573559316" duration="538000" />
-      <workItem from="1616574110144" duration="3113000" />
+      <workItem from="1616574110144" duration="4725000" />
+      <workItem from="1620352201976" duration="7358000" />
     </task>
     <task id="LOCAL-00001" summary="yarn初始化项目">
       <created>1614672046382</created>
@@ -370,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616576946809</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="终于circle ci全绿了，yarn ci也能成功执行了">
+      <created>1616577419666</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1616577419666</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +401,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="配置tsconfig.json的outDir，使得build后d.ts文件输出到dist/lib目录下" />
     <MESSAGE value="安装jest及相关包，创建jest.config.js" />
     <MESSAGE value="安装ts-jest" />
     <MESSAGE value="测试配置完成" />
@@ -414,25 +425,26 @@
     <MESSAGE value="安装jest-junit并配置" />
     <MESSAGE value="更改jest-junit版本" />
     <MESSAGE value="修改config.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改config.yml" />
+    <MESSAGE value="终于circle ci全绿了，yarn ci也能成功执行了" />
+    <option name="LAST_COMMIT_MESSAGE" value="终于circle ci全绿了，yarn ci也能成功执行了" />
   </component>
   <component name="WindowStateProjectService">
     <state x="388" y="135" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616504647571">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="388" y="135" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1616504647571" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1615375106624">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1616583382801">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1615375106624" />
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1616583382801" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1616569963783">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1616569963783" />
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1616576947995">
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2" timestamp="1616577421432">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1616576947995" />
+    <state x="233" y="59" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1616577421432" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1616577210829">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

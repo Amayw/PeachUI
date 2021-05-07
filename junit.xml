@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="7" failures="0" time="2.767">
+  <testsuite name="classes" errors="0" failures="0" skipped="0" timestamp="2021-05-07T06:52:59" time="1.846" tests="5">
+    <testcase classname="classes 可以接收0个className" name="classes 可以接收0个className" time="0.003">
+    </testcase>
+    <testcase classname="classes 可以接收1个className" name="classes 可以接收1个className" time="0">
+    </testcase>
+    <testcase classname="classes 可以接收2个className" name="classes 可以接收2个className" time="0">
+    </testcase>
+    <testcase classname="classes 可以接受undefined，且结果中没有undefined" name="classes 可以接受undefined，且结果中没有undefined" time="0.001">
+    </testcase>
+    <testcase classname="classes 可以接收奇奇怪怪的值" name="classes 可以接收奇奇怪怪的值" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2021-05-07T06:53:01" time="0.193" tests="2">
+    <testcase classname="icon 可以接收name" name="icon 可以接收name" time="0.011">
+    </testcase>
+    <testcase classname="icon 可以被点击" name="icon 可以被点击" time="0.038">
+    </testcase>
+  </testsuite>
+</testsuites>
