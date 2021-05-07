@@ -67,6 +67,6 @@ workflows:
       - publish:
           requires:
             - build
-            filters:
+          filters:
             branches:
-                only: /deploy/
+              only: /deploy/
