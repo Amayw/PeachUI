@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc712dfa-e635-4ec7-b8b3-0a1db40c283c" name="Default Changelist" comment="终于circle ci全绿了，yarn ci也能成功执行了">
-      <change beforePath="$PROJECT_DIR$/lib/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +83,7 @@
       <workItem from="1616562576517" duration="7683000" />
       <workItem from="1616573559316" duration="538000" />
       <workItem from="1616574110144" duration="4725000" />
-      <workItem from="1620352201976" duration="8064000" />
+      <workItem from="1620352201976" duration="10154000" />
     </task>
     <task id="LOCAL-00001" summary="yarn初始化项目">
       <created>1614672046382</created>
