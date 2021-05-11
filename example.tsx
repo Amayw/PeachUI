@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {HashRouter as Router, Link, Switch, Route} from 'react-router-dom';
 import IconExample from './lib/icon/icon.example';
 import ButtonExample from './lib/button/button.example';
+import DialogExample from './lib/dialog/dialog.example';
 
 const Doc:React.FC=()=>{
     return (
@@ -21,6 +22,9 @@ const Doc:React.FC=()=>{
                                 <li>
                                     <Link to="/button">Button</Link>
                                 </li>
+                                <li>
+                                    <Link to="/dialog">Dialog</Link>
+                                </li>
                             </ul>
                         </nav>
 
@@ -33,6 +37,8 @@ const Doc:React.FC=()=>{
                     <Route path="/icon" component={IconExample}>
                     </Route>
                     <Route path="/button" component={ButtonExample}>
+                    </Route>
+                    <Route path="/dialog" component={DialogExample}>
                     </Route>
                     <Route path="/" component={IconExample}>
                     </Route>
