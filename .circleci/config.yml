@@ -12,6 +12,7 @@ jobs:
           keys:
             - v2-dependencies-{{ checksum "package.json" }}
       - run: npm install
+      - run: npm i node-sass@npm:dart-sass@1.25.0
       - save_cache:
           paths:
             - node_modules
