@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {HashRouter as Router,Link,Switch,Route} from 'react-router-dom';
+import {HashRouter as Router, Link, Switch, Route} from 'react-router-dom';
 import IconExample from './lib/icon/icon.example';
 import ButtonExample from './lib/button/button.example';
+
 const Doc:React.FC=()=>{
     return (
         <>
