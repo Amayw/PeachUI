@@ -5,13 +5,15 @@ import './button.scss'
 
 interface ButtonProps{
     type:'default'|'success'|'error'|'info'|'primary'|'theme'|'warn',
-    loading?:boolean
+    loading?:boolean,
+    simple?:boolean
 }
 
 const sc=scopedClassMaker('peachui-button');
 const Button:React.FC<ButtonProps>=(props)=>{
+
     return (
-        <button className={classes(sc(),sc(props.type))}>{props.children}</button>
+        <button className={classes(sc(),sc(`${props.type}${props.simple?'-simple':''}`))}>{props.children}</button>
     )
 }
 

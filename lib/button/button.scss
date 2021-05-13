@@ -1,4 +1,14 @@
 @import "../_helper.scss";
+
+@keyframes laves {
+  from{
+    box-shadow: 0 1px 0 fade_out(black, 0.95);
+  }
+
+  to{
+    bbox-shadow: 12px 12px 12px 11px rgba(0, 0, 0, 1);
+  }
+}
 .peachui-button{
   padding: 0 1em;
   height: 32px;
@@ -11,36 +21,135 @@
   align-items: center;
   justify-content: center;
   vertical-align: middle;
-  &:hover{
-    color: white;
-  }
-  &-default{
-    color: #606266;
-    border: 1px solid #606266;
-  }
-  &-primary{
+  color: #fff;
+
+  &-primary-simple{
     color: $primary-color;
     border: 1px solid $primary-color;
+    &:hover{
+      background-color:lighten($primary-color,10%);
+      color: #fff;
+    }
+    &:active{
+      background-color:darken($primary-color,5%);
+      color: #fff;
+    }
   }
-  &-success{
+  &-success-simple{
     color: $success-color;
     border: 1px solid $success-color;
+    &:hover{
+      background-color:lighten($success-color,10%);
+      color: #fff;
+    }
+    &:active{
+      background-color:darken($success-color,5%);
+      color: #fff;
+    }
   }
-  &-error{
+  &-error-simple{
     color: $error-color;
     border: 1px solid $error-color;
+    &:hover{
+      background-color:lighten($error-color,10%);
+      color: #fff;
+    }
+    &:active{
+      background-color:darken($error-color,5%);
+      color: #fff;
+    }
   }
-  &-info{
+  &-info-simple{
     color: $info-color;
     border: 1px solid $info-color;
+    &:hover{
+      background-color:lighten($info-color,10%);
+      color: #fff;
+    }
+    &:active{
+      background-color:darken($info-color,5%);
+      color: #fff;
+    }
   }
-  &-theme{
+  &-theme-simple{
     color: $theme-color;
     border: 1px solid $theme-color;
+    &:hover{
+      background-color:lighten($theme-color,3%);
+      color: #fff;
+    }
+    &:active{
+      background-color:darken($theme-color,3%);
+      color: #fff;
+    }
   }
-  &-warn{
+  &-warn-simple{
     color: $warn-color;
     border: 1px solid $warn-color;
+    &:hover{
+      background-color:lighten($warn-color,10%);
+      color: #fff;
+    }
+    &:active{
+      background-color:darken($warn-color,5%);
+      color: #fff;
+    }
+  }
+
+
+  &-primary{
+    background-color: $primary-color;
+    &:hover{
+      background-color:lighten($primary-color,10%);
+    }
+    &:active{
+      background-color:darken($primary-color,5%);
+    }
+  }
+  &-success{
+    background-color: $success-color;
+    &:hover{
+      background-color:lighten($success-color,10%);
+    }
+    &:active{
+      background-color:darken($success-color,5%);
+    }
+  }
+  &-error{
+    background-color: $error-color;
+    &:hover{
+      background-color:lighten($error-color,10%);
+    }
+    &:active{
+      background-color:darken($error-color,5%);
+    }
+  }
+  &-info{
+    background-color: $info-color;
+    &:hover{
+      background-color:lighten($info-color,10%);
+    }
+    &:active{
+      background-color:darken($info-color,5%);
+    }
+  }
+  &-theme{
+    background-color: $theme-color;
+    &:hover{
+      background-color:lighten($theme-color,3%);
+    }
+    &:active{
+      background-color:darken($theme-color,3%);
+    }
+  }
+  &-warn{
+    background-color: $warn-color;
+    &:hover{
+      background-color:lighten($warn-color,10%);
+    }
+    &:active{
+      background-color:darken($warn-color,5%);
+    }
   }
   >.peachui-icon{
     margin: 0 0.2em;
