@@ -1,5 +1,5 @@
 import React from 'react';
-import {Icon} from '../index';
+import {Button, Icon} from '../index';
 import scopedClassMaker from '../helpers/scopedClassMaker';
 import './dialog.scss'
 
@@ -24,9 +24,9 @@ const Dialog:React.FC<dialogProps>=(props)=>{
                     {props.children}
                 </main>
                 <footer className={sc('footer')}>
-                    <button>
+                    <Button type='primary'>
                         ok
-                    </button>
+                    </Button>
                     <button>
                         cancel
                     </button>

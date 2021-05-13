@@ -1,0 +1,48 @@
+@import "../_helper.scss";
+.peachui-button{
+  padding: 0 1em;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #fff;
+  line-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  &:hover{
+    color: white;
+  }
+  &-default{
+    color: #606266;
+    border: 1px solid #606266;
+  }
+  &-primary{
+    color: $primary-color;
+    border: 1px solid $primary-color;
+  }
+  &-success{
+    color: $success-color;
+    border: 1px solid $success-color;
+  }
+  &-error{
+    color: $error-color;
+    border: 1px solid $error-color;
+  }
+  &-info{
+    color: $info-color;
+    border: 1px solid $info-color;
+  }
+  &-theme{
+    color: $theme-color;
+    border: 1px solid $theme-color;
+  }
+  &-warn{
+    color: $warn-color;
+    border: 1px solid $warn-color;
+  }
+  >.peachui-icon{
+    margin: 0 0.2em;
+  }
+}
