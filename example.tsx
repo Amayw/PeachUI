@@ -9,7 +9,9 @@ const Doc:React.FC=()=>{
     return (
         <>
             <header>
-                title
+                <img src='./images/2.jpg'/>
+                <img src='./images/5.jpg'/>
+                <img src='./images/6.png'/>
             </header>
             <Router>
             <aside>
