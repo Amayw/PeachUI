@@ -1,19 +1,12 @@
 @import "../_helper.scss";
 
-@keyframes laves {
-  from{
-    box-shadow: 0 1px 0 fade_out(black, 0.95);
-  }
 
-  to{
-    bbox-shadow: 12px 12px 12px 11px rgba(0, 0, 0, 1);
-  }
-}
 .peachui-button{
   padding: 0 1em;
   height: 32px;
-  border: none;
   outline: none;
+  border: none;
+  color:#fff;
   border-radius: 4px;
   background: #fff;
   line-height: 32px;
@@ -21,7 +14,7 @@
   align-items: center;
   justify-content: center;
   vertical-align: middle;
-  color: #fff;
+  margin: 4px;
 
   &-primary-simple{
     color: $primary-color;

@@ -24,11 +24,11 @@ const Dialog:React.FC<dialogProps>=(props)=>{
                     {props.children}
                 </main>
                 <footer className={sc('footer')}>
-                    <Button type='theme'>
-                        ok
+                    <Button type='theme' simple>
+                        取消
                     </Button>
                     <Button type='theme'>
-                        cancel
+                        确认
                     </Button>
                 </footer>
             </div>
