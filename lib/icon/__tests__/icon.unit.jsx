@@ -6,6 +6,7 @@ import {mount} from 'enzyme'
 describe("icon",()=>{
     it('可以接收name',()=>{
         const json=renderer.create(<Icon name='left'/>).toJSON();
+        console.log(json)
         expect(json).toMatchSnapshot();
     })
 

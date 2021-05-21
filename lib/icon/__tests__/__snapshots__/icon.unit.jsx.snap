@@ -2,7 +2,7 @@
 
 exports[`icon 可以接收name 1`] = `
 <svg
-  className="icon"
+  className="peachui-icon"
 >
   <use
     xlinkHref="#i-left"
