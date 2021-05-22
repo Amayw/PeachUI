@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Dialog from './Dialog';
+import Dialog, {alert} from './Dialog';
 import {Button} from '../index';
 
 const DialogExample: React.FunctionComponent = () => {
@@ -8,7 +8,7 @@ const DialogExample: React.FunctionComponent = () => {
     return (
         <>
             <div>
-                <button onClick={()=>setX(!x)}>button</button>
+                <Button type='theme' onClick={()=>setX(!x)}>button</Button>
                 <Dialog visible={x} buttons={
                     [
                         <Button type='theme' simple onClick={()=>setX(false)}>
@@ -23,7 +23,7 @@ const DialogExample: React.FunctionComponent = () => {
                 </Dialog>
             </div>
             <div>
-                <button onClick={()=>setY(!x)}>button</button>
+                <Button type='theme' onClick={()=>setY(!x)}>button</Button>
                 <Dialog visible={y} buttons={
                     [
                         <Button type='theme' simple onClick={()=>setY(false)}>
@@ -36,6 +36,9 @@ const DialogExample: React.FunctionComponent = () => {
                 } onClose={()=>setY(false)} closeOnClickMask={true}>
                     <div>peach&moon</div>
                 </Dialog>
+            </div>
+            <div>
+                <Button type='theme' simple onClick={()=>alert('hi')}>alert</Button>
             </div>
         </>
     );
