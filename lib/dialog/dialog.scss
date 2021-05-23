@@ -1,12 +1,12 @@
 @import '../_helper.scss';
 .peachui-dialog{
   position: fixed;
-  min-width: 20em;
+  min-width: 30em;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   background: white;
-  border-radius: 10px;
+  border-radius: 4px;
   z-index:2;
   &-mask{
     position: fixed;

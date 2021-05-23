@@ -1,4 +1,4 @@
-import React, {ReactElement} from 'react';
+import React, {ReactElement, ReactFragment, ReactNode} from 'react';
 import ReactDOM from 'react-dom'
 import {Button, Icon} from '../index';
 import scopedClassMaker from '../helpers/scopedClassMaker';
@@ -7,6 +7,7 @@ import './dialog.scss'
 const sc=scopedClassMaker('peachui-dialog');
 
 interface dialogProps {
+    title:ReactNode|ReactFragment,
     visible:Boolean,
     buttons?:Array<ReactElement>,
     onClose:React.MouseEventHandler,
@@ -31,16 +32,16 @@ const Dialog:React.FC<dialogProps>=(props)=>{
                         <Icon name="close"/>
                     </div>
                     <header className={sc('header')}>
-                        提示
+                        {props.title}
                     </header>
                     <main className={sc('main')}>
                         {props.children}
                     </main>
-                    <footer className={sc('footer')}>
+                    {props.buttons&&<footer className={sc('footer')}>
                         {props.buttons?.map((item,index)=>
                             React.cloneElement(item,{key:index})
                         )}
-                    </footer>
+                    </footer>}
                 </div>
             </>
             :null,document.body)
@@ -51,39 +52,46 @@ Dialog.defaultProps={
     closeOnClickMask:false
 }
 
-const alert=(content:string)=>{
-    const component=<Dialog visible={true} onClose={()=>{
+const alert=(title:ReactNode|ReactFragment,content:string)=>{
+    const onClose=()=>{
         ReactDOM.render(React.cloneElement(component,{visible:false}),div);
         ReactDOM.unmountComponentAtNode(div);
         div.remove();
-    }}>{content}</Dialog>
+    }
+    const component=<Dialog title={title} visible={true} onClose={onClose}
+    buttons={[<Button type='theme' >ok</Button>]}
+    >{content}</Dialog>
     const div=document.createElement('div');
     document.body.append(div);
     ReactDOM.render(component,div);
 }
 
-const confirm=(content:string,onConfirm?:()=>void,onCancel?:()=>void)=>{
-    const component=<Dialog visible={true} onClose={()=>{
+const confirm=(title:ReactNode,content:string,onConfirm?:()=>void,onCancel?:()=>void)=>{
+    const onClose=()=>{
         ReactDOM.render(React.cloneElement(component,{visible:false}),div);
         ReactDOM.unmountComponentAtNode(div);
         div.remove();
         onCancel&&onCancel();
-    }} buttons={
+    }
+    const onClickNo=()=>{
+        ReactDOM.render(React.cloneElement(component,{visible:false}),div);
+        ReactDOM.unmountComponentAtNode(div);
+        div.remove();
+        onConfirm&&onConfirm();
+    }
+    const onClickYes=()=>{
+        ReactDOM.render(React.cloneElement(component,{visible:false}),div);
+        ReactDOM.unmountComponentAtNode(div);
+        div.remove();
+        onCancel&&onCancel();
+    }
+
+    const component=<Dialog title={title} visible={true} onClose={onClose} buttons={
         [
-            <Button type='theme' simple onClick={()=>{
-                ReactDOM.render(React.cloneElement(component,{visible:false}),div);
-                ReactDOM.unmountComponentAtNode(div);
-                div.remove();
-                onConfirm&&onConfirm();
-            }}>
+            <Button type='theme' simple onClick={onClickNo}>
                 取消
             </Button>,
-            <Button type='theme'  onClick={()=>{
-                ReactDOM.render(React.cloneElement(component,{visible:false}),div);
-                ReactDOM.unmountComponentAtNode(div);
-                div.remove();
-                onCancel&&onCancel();
-            }}>
+            <Button type='theme'  onClick={onClickYes}>
                 确认
             </Button>
         ]
@@ -93,5 +101,18 @@ const confirm=(content:string,onConfirm?:()=>void,onCancel?:()=>void)=>{
     ReactDOM.render(component,div);
 }
 
-export {alert,confirm};
+const modal=(title:ReactNode|ReactFragment,content:ReactNode|ReactFragment)=>{
+    const onClose=()=>{
+        ReactDOM.render(React.cloneElement(component,{visible:false}),div);
+        ReactDOM.unmountComponentAtNode(div);
+        div.remove();
+    }
+    const component=<Dialog title={title} visible={true} onClose={()=>onClose()}>{content}</Dialog>
+    const div=document.createElement('div');
+    document.body.append(div);
+    ReactDOM.render(component,div);
+    return onClose;
+}
+
+export {alert,confirm,modal};
 export default Dialog;
