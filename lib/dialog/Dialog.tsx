@@ -1,6 +1,6 @@
 import React, {ReactElement} from 'react';
 import ReactDOM from 'react-dom'
-import {Icon} from '../index';
+import {Button, Icon} from '../index';
 import scopedClassMaker from '../helpers/scopedClassMaker';
 import './dialog.scss'
 
@@ -61,5 +61,37 @@ const alert=(content:string)=>{
     document.body.append(div);
     ReactDOM.render(component,div);
 }
-export {alert};
+
+const confirm=(content:string,onConfirm?:()=>void,onCancel?:()=>void)=>{
+    const component=<Dialog visible={true} onClose={()=>{
+        ReactDOM.render(React.cloneElement(component,{visible:false}),div);
+        ReactDOM.unmountComponentAtNode(div);
+        div.remove();
+        onCancel&&onCancel();
+    }} buttons={
+        [
+            <Button type='theme' simple onClick={()=>{
+                ReactDOM.render(React.cloneElement(component,{visible:false}),div);
+                ReactDOM.unmountComponentAtNode(div);
+                div.remove();
+                onConfirm&&onConfirm();
+            }}>
+                取消
+            </Button>,
+            <Button type='theme'  onClick={()=>{
+                ReactDOM.render(React.cloneElement(component,{visible:false}),div);
+                ReactDOM.unmountComponentAtNode(div);
+                div.remove();
+                onCancel&&onCancel();
+            }}>
+                确认
+            </Button>
+        ]
+    }>{content}</Dialog>
+    const div=document.createElement('div');
+    document.body.append(div);
+    ReactDOM.render(component,div);
+}
+
+export {alert,confirm};
 export default Dialog;
