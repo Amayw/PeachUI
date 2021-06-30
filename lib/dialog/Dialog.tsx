@@ -52,67 +52,46 @@ Dialog.defaultProps={
     closeOnClickMask:false
 }
 
-const alert=(title:ReactNode|ReactFragment,content:string)=>{
-    const onClose=()=>{
+const modal=(title:ReactNode|ReactFragment,content:ReactNode|ReactFragment,buttons?:Array<ReactElement>,afterClose?:()=>void)=>{
+    const close=()=>{
         ReactDOM.render(React.cloneElement(component,{visible:false}),div);
         ReactDOM.unmountComponentAtNode(div);
         div.remove();
     }
-    const component=<Dialog title={title} visible={true} onClose={onClose}
-    buttons={[<Button type='theme' >ok</Button>]}
+    const component=<Dialog title={title} visible={true} onClose={()=>{close();afterClose&&afterClose()}}
+    buttons={buttons}
     >{content}</Dialog>
     const div=document.createElement('div');
     document.body.append(div);
     ReactDOM.render(component,div);
+    return close;
+}
+
+const alert=(title:ReactNode|ReactFragment,content:ReactNode|ReactFragment)=>{
+    const buttons=[<Button type='theme' onClick={()=>onClose()}>ok</Button>]
+    const onClose=modal(title,content,buttons);
 }
 
 const confirm=(title:ReactNode,content:string,onConfirm?:()=>void,onCancel?:()=>void)=>{
-    const onClose=()=>{
-        ReactDOM.render(React.cloneElement(component,{visible:false}),div);
-        ReactDOM.unmountComponentAtNode(div);
-        div.remove();
-        onCancel&&onCancel();
-    }
     const onClickNo=()=>{
-        ReactDOM.render(React.cloneElement(component,{visible:false}),div);
-        ReactDOM.unmountComponentAtNode(div);
-        div.remove();
-        onConfirm&&onConfirm();
+        onClose();
+        onCancel&&onCancel();
     }
     const onClickYes=()=>{
-        ReactDOM.render(React.cloneElement(component,{visible:false}),div);
-        ReactDOM.unmountComponentAtNode(div);
-        div.remove();
-        onCancel&&onCancel();
+        onClose();
+        onConfirm&&onConfirm();
     }
-
-    const component=<Dialog title={title} visible={true} onClose={onClose} buttons={
-        [
-            <Button type='theme' simple onClick={onClickNo}>
-                取消
-            </Button>,
-            <Button type='theme'  onClick={onClickYes}>
-                确认
-            </Button>
-        ]
-    }>{content}</Dialog>
-    const div=document.createElement('div');
-    document.body.append(div);
-    ReactDOM.render(component,div);
+    const buttons=[
+        <Button type='theme' simple onClick={onClickNo}>
+            取消
+        </Button>,
+        <Button type='theme'  onClick={onClickYes}>
+            确认
+        </Button>
+    ]
+    const onClose=modal(title,content,buttons,onCancel);
 }
 
-const modal=(title:ReactNode|ReactFragment,content:ReactNode|ReactFragment)=>{
-    const onClose=()=>{
-        ReactDOM.render(React.cloneElement(component,{visible:false}),div);
-        ReactDOM.unmountComponentAtNode(div);
-        div.remove();
-    }
-    const component=<Dialog title={title} visible={true} onClose={()=>onClose()}>{content}</Dialog>
-    const div=document.createElement('div');
-    document.body.append(div);
-    ReactDOM.render(component,div);
-    return onClose;
-}
 
 export {alert,confirm,modal};
 export default Dialog;

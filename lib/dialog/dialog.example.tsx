@@ -7,7 +7,7 @@ const DialogExample: React.FunctionComponent = () => {
     const [y,setY]=useState(false);
     //函数返回操作函数内部变量的API
     const openModal=()=>{
-        const close=modal('modal',<h1>你好啊<button onClick={()=>close()}>close</button></h1>)
+        const close=modal('modal',<><h1>你好啊</h1><Button type="theme" onClick={()=>close()}>close</Button></>)
     }
     return (
         <>
@@ -46,7 +46,7 @@ const DialogExample: React.FunctionComponent = () => {
             </div>
 
             <div>
-                <Button type='theme' simple onClick={()=>confirm('confirm','hihihi',()=>{console.log('no')},()=>{console.log('yes')})}>confirm</Button>
+                <Button type='theme' simple onClick={()=>confirm('confirm','hihihi',()=>{console.log('yes')},()=>{console.log('no')})}>confirm</Button>
             </div>
 
             <div>
