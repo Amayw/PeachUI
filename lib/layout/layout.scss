@@ -1,0 +1,18 @@
+.peachui-layout{
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+
+  &-header{
+    background-color: pink;
+  }
+
+  &-main{
+    background-color: orange;
+  }
+
+  &-footer{
+    background-color: cornflowerblue;
+  }
+
+}
