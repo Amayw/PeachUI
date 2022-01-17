@@ -7,7 +7,7 @@ import './dialog.scss'
 const sc=scopedClassMaker('peachui-dialog');
 
 interface dialogProps {
-    title:ReactNode|ReactFragment,
+    title:ReactNode,
     visible:Boolean,
     buttons?:Array<ReactElement>,
     onClose:React.MouseEventHandler,

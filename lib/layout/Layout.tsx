@@ -2,7 +2,9 @@ import React, {ReactElement} from 'react';
 import scopedClassMaker from '../helpers/scopedClassMaker';
 import './layout.scss'
 import classes from '../helpers/classes';
+import Sider from './Sider';
 interface layoutProps extends React.HTMLAttributes<HTMLElement>{
+    children:ReactElement|Array<ReactElement>
 }
 
 const sc=scopedClassMaker('peachui-layout');
@@ -10,17 +12,27 @@ const sc=scopedClassMaker('peachui-layout');
 const Layout:React.FC<layoutProps>=(props)=>{
     const {className,...rest}=props;
 
-    const judeSider = () => {
-        let hasSider = false
-        React.Children.forEach(props.children, (child:ReactElement) => {
-            if (child?.type === 'Sider') {
-                hasSider = true
+    // let hasActive=false;
+    // if((props.children as Array<ReactElement>).length){
+    //     (props.children as Array<ReactElement>).map(child=>{
+    //         console.log(child.type)
+    //         if(child.type === Sider){
+    //             hasActive=true;
+    //         }
+    //     })
+    // }
+
+    function judeSider(){
+        let hasActive=false;
+        React.Children.map(props.children,(child:ReactElement)=>{
+            if(child?.type===Sider){
+                hasActive=true;
             }
         })
-        return hasSider
+        return hasActive;
     }
     return (
-        <div className={classes(judeSider()?classes(sc(),'has-sider'):sc(),className)} {...rest}>
+        <div className={classes(className,judeSider()?sc('has-active'):sc())} {...rest}>
             {props.children}
         </div>
     )

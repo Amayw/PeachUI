@@ -3,14 +3,23 @@
   display: flex;
   flex-direction: column;
 
+  &-has-active{
+    display: flex;
+    flex-direction: row;
+  }
+
   &-header{
     background-color: pink;
   }
 
   &-main{
     background-color: orange;
+    flex-grow: 1;
   }
 
+  & &{
+    flex-grow: 1;
+  }
   &-footer{
     background-color: cornflowerblue;
   }

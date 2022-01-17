@@ -12,14 +12,14 @@ const LayoutExample:React.FC=()=>{
         <>
             <h1>示例一</h1>
             <Layout style={{height:500+'px'}} className='hi'>
-                <Header>header</Header>
-                <Main>main</Main>
-                <Footer>footer</Footer>
+                <Header style={{height:100+'px'}} className='1'>header</Header>
+                <Main style={{height:300+'px'}} className='2'>main</Main>
+                <Footer style={{height:100+'px'}} className='3'>footer</Footer>
             </Layout>
             <h1>示例二</h1>
-            <Layout>
+            <Layout style={{height:500+'px'}}>
                 <Header>header</Header>
-                <Layout>
+                <Layout  style={{height:400+'px'}}>
                     <Sider>sider</Sider>
                     <Main>main</Main>
                 </Layout>
